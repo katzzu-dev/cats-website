@@ -1,8 +1,13 @@
-    <!doctype html>
-    <html lang="en">                                                  <head>
-      <meta charset="UTF-8">                                            <title>cats site</title>
-    </head>
-    <body>                                                              <h1>My meme cats site!!</h1>                                      <h2>Where you can find information about some meme cats (now where is cats: Katzu, Luna, Rigby)</h2>                                 <img src="/static/Smcat/cat1.jpeg" width="300", alt="meme c
-at">
-    </body>
-    </html>
+<!doctype html>
+<html lang="en">                                                  <head>
+  <meta charset="UTF-8">                                            <link rel="stylesheet" href="{{ url_for('static', filename='pico.min.css') }}">
+   <title>cats site</title>
+</head>
+<body>                                                              <h1>My meme cats site!!</h1>
+  <a href="/survey">Survey</a>
+  <h2>Where you can find information about some meme cats (now where is cats: Katzu, Luna, Rigby)</h2>                   
+
+<img src="{{ url_for('static', filename='Smcat/cat1.jpeg') }}" width="300" alt="meme cat">
+
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>fav cat servey</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='pico.min.css') }}">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 
    <h2>Why you love this cat??(will be optional)</h2>
    <textarea name="why_lovecat"></textarea>
-   <img src="/static/Smcat/cat2.jpeg" width="300" alt="meme cat">
+   <img src="/static/Smcat/cat2.jpg" width="300" alt="meme cat">
 
    <h2>Do u know this cat's name??(I don't)</h2>
    <select name="cats_name" required>
